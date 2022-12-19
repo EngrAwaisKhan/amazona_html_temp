@@ -1,0 +1,26 @@
+{
+  "name": "amazona_html_temp",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "1. Website Template\r    1. Create amazona folder\r    2. create template folder\r    3. create index.html\r    4. add default HTML code\r    5. link to style.css\r    6. create header, main and footer\r    7. style elements\r 2. Display Products\r    1. create products div\r    2. add product attributes\r    3. add link, image, name and price\r 3. Create React App\r    1. npx create-react-app frontend\r    2. npm start\r    3. Remove unused files\r    4. copy index.html content to App.js\r    5. copy style.css content to index.css\r    6. replace class with className\r 4. Create Rating and Product Component\r    1. create components/Rating.js\r    2. create div.rating\r    3. style div.rating, span and last span\r    4. Create Product component\r    5. Use Rating component\r 5. Build Product Screen\r    1. Install react-router-dom\r    2. Use BrowserRouter and Route for Home Screen\r    3. Create HomeScreen.js\r    4. Add product list code there\r    5. Create ProductScreen.js\r    6. Add new Route from product details to App.js\r    7. Create 3 columns for product image, info and action",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EngrAwaisKhan/amazona_html_temp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EngrAwaisKhan/amazona_html_temp/issues"
+  },
+  "homepage": "https://github.com/EngrAwaisKhan/amazona_html_temp#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
