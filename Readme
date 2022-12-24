@@ -96,3 +96,8 @@
     5. install dotenv
     6. return token and data
     7. test it using postman
+15. Create Sample Products In MongoDB
+    1. create models/productModel.js
+    2. create productSchema and productModel
+    3. create productRoute
+    4. Seed sample data
