@@ -32,35 +32,35 @@
    6. Add new Route from product details to App.js
    7. Create 3 columns for product image, info and action
 6. Load Products From Backend
-    1. edit HomeScreen.js
-    2. define products, loading and error.
-    3. create useEffect
-    4. define async fetchData and call it
-    5. install axios
-    6. get data from /api/products
-    7. show them in the list
-    8. create Loading Component
-    9. create Message Box Component
-    10. use them in HomeScreen
+   1. edit HomeScreen.js
+   2. define products, loading and error.
+   3. create useEffect
+   4. define async fetchData and call it
+   5. install axios
+   6. get data from /api/products
+   7. show them in the list
+   8. create Loading Component
+   9. create Message Box Component
+   10. use them in HomeScreen
 7. Add Redux to Home Screen
-    1. npm install redux react-redux
-    2. Create store.js
-    3. initState= {products:[]}
-    4. reducer = (state, action) => switch LOAD_PRODUCTS: {products: action.payload}
-    5. export default createStore(reducer, initState)
-    6. Edit HomeScreen.js
-    7. shopName = useSelector(state=>state.products)
-    8. const dispatch = useDispatch()
-    9. useEffect(()=>dispatch({type: LOAD_PRODUCTS, payload: data})
-    10. Add store to index.js
+   1. npm install redux react-redux
+   2. Create store.js
+   3. initState= {products:[]}
+   4. reducer = (state, action) => switch LOAD_PRODUCTS: {products: action.payload}
+   5. export default createStore(reducer, initState)
+   6. Edit HomeScreen.js
+   7. shopName = useSelector(state=>state.products)
+   8. const dispatch = useDispatch()
+   9. useEffect(()=>dispatch({type: LOAD_PRODUCTS, payload: data})
+   10. Add store to index.js
 8. Add Redux to Product Screen
-    1. create product details constants, actions and reducers
-    2. add reducer to store.js
-    3. use action in ProductScreen.js
-    4. add /api/product/:id to backend api
+   1. create product details constants, actions and reducers
+   2. add reducer to store.js
+   3. use action in ProductScreen.js
+   4. add /api/product/:id to backend api
 9. Handle Add To Cart Button
-    1. Handle Add To Cart in ProductScreen.js
-    2. create CartScreen.js
+   1. Handle Add To Cart in ProductScreen.js
+   2. create CartScreen.js
 10. Implement Add to Cart Action
     1. create addToCart constants, actions and reducers
     2. add reducer to store.js
@@ -101,3 +101,7 @@
     2. create productSchema and productModel
     3. create productRoute
     4. Seed sample data
+16. Implement SignIn Action
+    1. create signin constants, actions and reducers
+    2. add reducer to store.js
+    3. use action in SigninScreen.js
