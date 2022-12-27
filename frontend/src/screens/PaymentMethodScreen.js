@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { savePaymentMethod } from '../actions/cartActions';
 import CheckoutSteps from '../Components/CheckoutSteps';
+import {useNavigate} from 'react-router-dom';
 
 export default function PaymentMethodScreen(props) {
   // const cart = useSelector((state) => state.cart);
@@ -11,10 +12,12 @@ export default function PaymentMethodScreen(props) {
   // }
   const [paymentMethod, setPaymentMethod] = useState('PayPal');
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(savePaymentMethod(paymentMethod));
-    props.history.push('/placeorder');
+    navigate('/placeorder');
   };
   return (
     <div>
