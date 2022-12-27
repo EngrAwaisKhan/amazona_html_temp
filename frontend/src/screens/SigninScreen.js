@@ -23,7 +23,7 @@ export default function SigninScreen() {
 
   useEffect(() => {
     if (userInfo) {
-      navigate('/shiping');
+      navigate('/shipping');
     }
   }, [userInfo]);
 
@@ -46,7 +46,7 @@ export default function SigninScreen() {
           />
         </div>
         <div>
-          <label htmlFor="email">Password</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             id="password"
@@ -64,8 +64,7 @@ export default function SigninScreen() {
         <div>
           <label />
           <div>
-            New Customer?{' '}
-            <Link to={navigate('/register')}>Create your account</Link>
+            New Customer? <Link to="#">Create your account</Link>
           </div>
         </div>
       </form>
