@@ -13,11 +13,17 @@ export default function ShippingAddressScreen() {
   if (!userInfo) {
     navigate('/signin');
   }
-  const [fullName, setFullName] = useState(shippingAddress.fullName);
-  const [address, setAddress] = useState(shippingAddress.address);
-  const [city, setCity] = useState(shippingAddress.city);
-  const [postalCode, setPostalCode] = useState(shippingAddress.postalCode);
-  const [country, setCountry] = useState(shippingAddress.country);
+  // const [fullName, setFullName] = useState(shippingAddress.fullName);
+  // const [address, setAddress] = useState(shippingAddress.address);
+  // const [city, setCity] = useState(shippingAddress.city);
+  // const [postalCode, setPostalCode] = useState(shippingAddress.postalCode);
+  // const [country, setCountry] = useState(shippingAddress.country);
+
+  const [fullName, setFullName] = useState('');
+  const [address, setAddress] = useState('');
+  const [city, setCity] = useState('');
+  const [postalCode, setPostalCode] = useState('');
+  const [country, setCountry] = useState('');
   const dispatch = useDispatch();
   const submitHandler = (e) => {
     e.preventDefault();
